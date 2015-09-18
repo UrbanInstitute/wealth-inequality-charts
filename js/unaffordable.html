@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Inmovers</title>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="./LineChart_files/jquery.min.js"></script>
+<script src="./LineChart_files/highcharts.js"></script>
+<script src="./LineChart_files/exporting.js"></script>
+<script src="./LineChart_files/urban.js"></script>
+<script src="unaffordable.js"></script>
+
+            <style>
+.hidden{
+  display: none;
+}
+.visible{
+	display: block;
+    width: 100%;
+}
+                
+                .chart{
+                    width: 30%; height: 650px; margin: 0 auto; float: left
+                }
+		</style>
+    
+
+    
+    
+ 
+    <body>
+
+        
+           <script>
+$(document).ready(function(){
+  
+  toggleVisible('#sales');
+  $('#toggleSales').click(function(e){
+	  toggleVisible('#sales');
+  });
+  $('#toggleRentals').click(function(e){
+	  toggleVisible('#rentals');
+  });
+    
+    
+  function toggleVisible(turnMeOn){
+	var chartArray = ['#sales','#rentals']; 
+	for (i=0; i<=chartArray.length; i++){
+		if (turnMeOn == chartArray[i]){
+		  $(turnMeOn).attr('class','visible');
+		}else{
+		  $(chartArray[i]).attr('class','hidden');
+		}
+	}
+  }
+
+});		
+</script>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary" id="toggleSales">Sales</button>
+    <button type="button" class="btn btn-primary" id="toggleRentals">Rentals</button>
+</div>    
+    <div id="sales">
+        <div id="key"></div>
+<div id="sales_1br" class="chart" ></div>
+<div id="sales_2br" class="chart" ></div>
+<div id="sales_3br" class="chart" ></div>
+        </div>
+        
+            <div id="rentals">
+                 <div id="key"></div>
+<div id="rentals_1br" class="chart" ></div>
+<div id="rentals_2br" class="chart" ></div>
+<div id="rentals_3br" class="chart" ></div>
+        </div>
+        
+
+
+
+
+
+</body>
+
+</html>

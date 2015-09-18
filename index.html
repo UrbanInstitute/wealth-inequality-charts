@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Nine Charts about Wealth Inequality in America</title>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@urbaninstitute">
+    <meta name="twitter:creator" content="@urbaninstitute">
+    <meta name="twitter:title" content="9 Charts about Wealth Inequality in America">
+    <meta name="twitter:description" content="These charts illustrate how income inequality, earnings gaps, homeownership rates, retirement savings, student loan debt, and lopsided asset-building subsidies have contributed to the country’s growing wealth disparities.">
+    <meta name="twitter:image" content="http://datatools.urban.org/Features/wealth-inequality-charts/img/AP173355447669.jpg">
+
+    <meta property="og:title" content="9 Charts about Wealth Inequality in America" />
+    <meta property="og:description" content="These charts illustrate how income inequality, earnings gaps, homeownership rates, retirement savings, student loan debt, and lopsided asset-building subsidies have contributed to the country’s growing wealth disparities." />
+
+    <meta property="og:image" content="http://datatools.urban.org/Features/wealth-inequality-charts/img/AP173355447669.jpg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:url" content="http://urbn.is/wealthcharts">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <div class="navbar">
+        <header class="wrapper clearfix">
+            <a id="logo" href="http://www.urban.org">
+                <img src="http://datatools.urban.org/features/mapping-americas-futures/images/logo_revblue_trans.png" height="40px">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="http://twitter.com/intent/tweet?text=From%20%40urbaninstitute%3A%209%20charts%20about%20wealth%20inequality%20in%20America%20http%3A%2F%2Furbn.is%2Fwealthcharts">Tweet</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://urbn.is/wealthcharts">Facebook</a>
+                    </li>
+                    <li><a href="mailto:%20?Subject=9 Charts about Wealth Inequality in America&amp;Body=Hi! I thought you'd be interested in this new interactive feature from the Urban Institute: “9 Charts about Wealth Inequality in America” http://urbn.is/wealthcharts">E-mail</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="main-container">
+
+        <div class="main-title clearfix">
+            <div class="main-image"></div>
+            <div class="main wrapper clearfix">
+                <div class="title-text">Nine Charts about Wealth Inequality in America</div>
+                <div class="intro-byline"></div>
+                <div class="intro-text">Why hasn’t wealth inequality improved over the past 50 years? And why, in particular, has the racial wealth gap not closed? These nine charts illustrate how income inequality, earnings gaps, homeownership rates, retirement savings, student loan debt, and lopsided asset-building subsidies have contributed to these growing wealth disparities.</div>
+            </div>
+        </div>
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- TEST -->
+            <h1><span class="number">1 </span>Wealth inequality is growing</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="wealthTime" class="chart"></div>
+                    <div id="time-series-btns" class="btn-group clearfix">
+                        <button id="button-1963" class="active">1963</button>
+                        <button id="button-1983">1983</button>
+                        <button id="button-1989">1989</button>
+                        <button id="button-1992">1992</button>
+                        <button id="button-1995">1995</button>
+                        <button id="button-1998">1998</button>
+                        <button id="button-2001">2001</button>
+                        <button id="button-2004">2004</button>
+                        <button id="button-2007">2007</button>
+                        <button id="button-2010">2010</button>
+                        <button id="button-2013">2013</button>
+                    </div>
+
+                    <div class="static-chart">
+                        <img src="img/WealthPercentiles.jpg" />
+                    </div>
+
+
+
+                    <div class="btn-group clearfix">
+                        <button id="button-time" class="btn autocompare">Animate</button>
+
+                        <button class="btn dl save-chart custom" data-filenames='["WealthPercentiles","WealthPercentiles"]' data-headers='["Animation","Static chart"]'>Save chart</button>
+                        <a href="data/WealthPercentiles.xlsx">
+                            <button id="save1" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes"><b>Sources:</b> Survey of Financial Characteristics of Consumers 1962 (December 31), Survey of Changes in Family Finances 1963, and Survey of Consumer Finances 1983&ndash;2013.</p>
+                    <p class="chart-notes"><b>Notes:</b> 2013 dollars. No comparable data are available between 1963 and 1983.</p>
+                </div>
+            </aside>
+            <article>
+
+                <p>Average wealth has increased over the past 50 years, but it has not grown equally for all groups. Between 1963 and 2013,</p>
+                <ul>
+                    <li>families near the bottom of the wealth distribution (those at the 10th percentile) went from having no wealth on average to being about $2,000 in debt,</li>
+                    <li>those in the middle roughly doubled their wealth—mostly between 1963 and 1983,</li>
+                    <li>families near the top (at the 90th percentile) saw their wealth quadruple,</li>
+                    <li>and the wealth of those at the 99th percentile—in other words, those wealthier than 99 percent of all families—grew sixfold.</li>
+
+                </ul>
+                <p>These changes have increased wealth inequality significantly. In 1963, families near the top had six times the wealth (or, $6 for every $1) of families in the middle. By 2013, they had 12 times the wealth of families in the middle.
+                </p>
+
+            </article>
+
+
+        </div>
+        <!-- end test -->
+
+
+
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!--  2 -->
+            <h1> <span class="number">2 </span> One reason for rising wealth inequality is income inequality </h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="percentileFamilyIncome" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/IncomeDeciles.jpg" />
+                    </div>
+
+                    <div class="btn-group clearfix">
+
+                        <button class="btn dl save-chart single" data-filename="IncomeDeciles">Save chart</button>
+                        <a href="data/IncomeDeciles.xlsx">
+                            <button id="save2" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+
+                    <p class="chart-notes"><b>Sources:</b> Current Population Survey 1963&ndash;2014. Calculations provided by Karen Smith, Urban Institute.</p>
+                    <p class="chart-notes"><b>Notes:</b> 2013 dollars. <a href="http://blog.metrotrends.org/2015/02/addressing-income-inequality-requires-knowing-were-measuring/" target="_blank">Income here is measured as private income (e.g., earnings and dividends) plus cash government benefits. Income differences narrow when all taxes and transfers—such as health insurance and in-kind government benefits—are included</a>, but private wealth does not change.</p>
+                </div>
+            </aside>
+            <article>
+
+                <p><a href="FAQ.pdf">Income is money coming into a family, while wealth is a family’s assets</a>—things like savings, real estate, businesses—minus debt. Both are important sides of families’ financial security, but wealth cushions families against emergencies and gives them the means to move up the economic ladder. Also, wealth disparities are much greater than income disparities: three times as much by one measure.</p>
+
+                <p><a href="http://blog.governmentwedeserve.org/2014/07/14/piketty-poverty-political-pooh/">Income inequality</a> can worsen wealth inequality because the income people have available to save and invest matters. Focusing on private income, such as earnings and dividends, plus cash government benefits, we see that families near the top had a <a href="http://blog.metrotrends.org/2015/02/adjusting-family-composition-increases-incomes-income-gap-remains-high/" target="_blank">70 percent increase in income</a> from 1963 to 2013, while the income of families at the bottom stayed roughly the same.</p>
+
+            </article>
+        </div>
+        <!-- end2 -->
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!--  3 -->
+            <h1> <span class="number">3 </span> Racial and ethnic wealth disparities are also growing</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="race-wealth-mean" class="chart show"></div>
+                    <div id="race-wealth-median" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/WealthByRace-avg.jpg" />
+                    </div>
+                    <div class="static-chart">
+                        <img src="img/WealthByRace-med.jpg" />
+                    </div>
+
+
+                    <div class="btn-group clearfix">
+                        <button id="racewealth" class="btn autocompare">Show Median</button>
+
+                        <button class="btn dl save-chart double" data-filenames='["WealthByRace-avg","WealthByRace-med"]' data-headers='["Average","Median"]'>Save chart</button>
+                        <a href="data/WealthByRace.xlsx">
+                            <button id="save3" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes caption">Median wealth by race and ethnicity is lower than average wealth, but the trends stay the same. Both measures are important because average wealth indicates how a group is prospering as a whole relative to other groups, while median wealth shows how the “typical” family is doing.</p>
+                    <p class="chart-notes"><b>Sources:</b> Survey of Financial Characteristics of Consumers 1962 (December 31), Survey of Changes in Family Finances 1963, and Survey of Consumer Finances 1983&ndash;2013.</p>
+                    <p class="chart-notes"><b>Notes:</b> 2013 dollars. No comparable data are available between 1963 and 1983. African American/Hispanic distinction within nonwhite population available only in 1983 and later.</p>
+
+                </div>
+            </aside>
+            <article>
+                <p>Families of color will soon make up a majority of the population, but most continue to fall behind whites in building wealth. In 1963, the average wealth of white families was $117,000 higher than the average wealth of nonwhite families. By 2013, the average wealth of white families was over $500,000 higher than the average wealth of African American families ($95,000) and of Hispanic families ($112,000). Put another way, white families on average had seven times the wealth of African American families and six times the wealth of Hispanic families in 2013. The ratio of white to African American or Hispanic family wealth remained extremely high over this period and deteriorated in recent years.
+                </p>
+            </article>
+        </div>
+        <!-- end3 -->
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!--  4 -->
+            <h1> <span class="number">4 </span> The racial wealth gap grows sharply with age</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="racial-wealth-gap-mean" class="chart show"></div>
+                    <div id="racial-wealth-gap-median" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/WealthRaceOverLifetime-avg.jpg" />
+                    </div>
+                    <div class="static-chart">
+                        <img src="img/WealthRaceOverLifetime-med.jpg" />
+                    </div>
+                    <div class="btn-group clearfix">
+                        <button id="racegap" class="btn autocompare">Show Median</button>
+                        <button class="btn dl save-chart double" data-filenames='["WealthRaceOverLifetime-avg","WealthRaceOverLifetime-med"]' data-headers='["Average","Median"]'>Save chart</button>
+                        <a href="data/WealthbyRaceoverLifetime.xlsx">
+                            <button id="save4" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes"><b>Source:</b> Survey of Consumer Finances 1983&ndash;2013.</p>
+                    <p class="chart-notes"><b>Notes:</b> 2013 dollars. Hispanic sample size too small to show. Age is defined as the age of the household head. In 2013, these people were age 62&ndash;70. In 1983, ages 32&ndash;40.</p>
+                </div>
+            </aside>
+            <article>
+                <p>White families accumulate more wealth over their lives than African American or Hispanic families do, widening the wealth gap at older ages. In their 30s, whites have an average of $140,000 more in wealth than African Americans (three times as much). By their 60s, whites have over $1 million more in average wealth than African Americans (11 times as much).
+                </p>
+                <p>
+                    Median wealth by race is lower. Though the dollar gap grows with age, the ratio doesn’t grow in the same way: whites have seven times more median wealth than African Americans in their 30s and in their 60s.
+                </p>
+            </article>
+        </div>
+        <!-- end4 -->
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- 5 -->
+            <h1> <span class="number">5 </span> Differences in earnings add up over a lifetime and widen the racial wealth gap</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="lifetime-earnings" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/LifetimeEarnings.jpg" />
+                    </div>
+
+                    <div class="btn-group clearfix">
+
+                        <button class="btn dl save-chart single" data-filename="LifetimeEarnings">Save chart</button>
+                        <a href="data/LifetimeEarnings.xlsx">
+                            <button id="save5" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+
+                    <p class="chart-notes"><b>Sources:</b> Health and Retirement Study 1992-2012 matched to Summary Earnings Records 1951&ndash;2007. Calculations provided by Melissa Favreault, Urban Institute.
+                    </p>
+                    <p class="chart-notes"><b>Notes:</b> 2013 dollars. These people are age 61 in 2004&ndash;2012.</p>
+                </div>
+            </aside>
+            <article>
+
+                <p>Why is the racial wealth gap so big? People with lower earnings may have a harder time saving. The typical white person earns $2 million over a lifetime, while the typical African American earns $1.5 million and the typical Hispanic person earns $1 million. These disparities partly reflect historical racial disadvantages that continue to affect later generations.
+                </p>
+
+            </article>
+
+
+        </div>
+        <!-- end 5 -->
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- 6 -->
+            <h1><span class="number">6 </span> African Americans and Hispanics lag behind on major wealth-building measures, like homeownership</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="homeownership-race" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/Homeownership.jpg" />
+                    </div>
+
+                    <div class="btn-group clearfix">
+
+                        <button class="btn dl save-chart single" data-filename="Homeownership">Save chart</button>
+                        <a href="data/Homeownership.xlsx">
+                            <button id="save6" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes"><b>Source:</b> Current Population Survey 1983&ndash;2013.</p>
+                </div>
+            </aside>
+            <article>
+
+                <p>African Americans and Hispanics are less likely to own homes and have less in liquid retirement savings, so they more often miss out on these powerful wealth-building tools. Homeownership, in particular, makes the most of automatic payments—homeowners must make mortgage payments every month—to build equity.
+                </p>
+                <p>
+                    In 1983, 68 percent of white families owned their home, compared with 45 percent of African Americans families and 41 percent of Hispanic families. By 2013, the racial homeownership gap improved slightly for Hispanics, but it grew worse for African Americans. African Americans and Hispanics were also less likely to own homes than whites at the same income level.
+
+                </p>
+
+            </article>
+
+
+        </div>
+        <!-- end 6 -->
+
+
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- 7 -->
+            <h1> <span class="number">7 </span> African American and Hispanic families have less in liquid retirement savings</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="avg-retirement" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/Retirement.jpg" />
+                    </div>
+
+                    <div class="btn-group clearfix">
+
+                        <button class="btn dl save-chart single" data-filename="Retirement">Save chart</button>
+                        <a href="data/Retirement.xlsx">
+                            <button id="save7" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes"><b>Source:</b> Survey of Consumer Finances 1989&ndash;2013.
+                    </p>
+                    <p class="chart-notes"><b>
+    Notes:</b> 2013 dollars. Liquid retirement savings include dollars in accounts such as 401(k), 403(b), and IRAs. Median liquid retirement savings for African American and Hispanic families were zero from 1989 to 2013. Median liquid retirement savings for whites were zero through the mid-1990s, about $1,500 in 1998, and $5,000 in 2013.</p>
+                </div>
+            </aside>
+            <article>
+
+                <p>In 2013, white families had over $100,000 more (or 7 to 11 times more) in average liquid retirement savings than African American and Hispanic families. In sheer dollar terms, this disparity quadrupled over the past quarter-century: in 1989, white families had $25,000 more (or five times more) in average retirement savings than African American and Hispanic families. This gap is becoming more important as liquid retirement savings vehicles, like 401(k)s, replace more traditional defined-benefit pension plans.
+                </p>
+                <p>
+                    Why does this gap exist? It’s not just income differences; even at the same income level, gaps remain. African American and Hispanic families have less access to retirement saving vehicles and lower participation when they have access. But lower access and participation isn’t the full story. African American workers are somewhat less likely to participate in employer retirement plans than white workers (40 percent versus 47 percent in 2013, respectively) but have much lower average liquid retirement savings.* This suggests that simply having more employers offer retirement plans will not be enough to close the gap, especially if lower-income groups contribute smaller portions of their income to retirement plans and have a greater likelihood of withdrawing money early to cover financial emergencies. Lower-income families may also get lower returns on average if they invest in safer, more short-term assets.
+
+                </p>
+
+            </article>
+
+
+        </div>
+        <!-- end 7 -->
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- 8 -->
+            <h1><span class="number">8 </span> African American families carry more student loan debt than white families</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="avg-student-debt" class="chart show"></div>
+                    <div id="share-families-debt" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/StudentLoans-avg.jpg" />
+                    </div>
+                    <div class="static-chart">
+                        <img src="img/StudentLoans-share.jpg" />
+                    </div>
+
+                    <div class="btn-group clearfix">
+                        <button id="race-student" class="btn autocompare">Show Share with Student Loan debt</button>
+
+                        <button class="btn dl save-chart double" data-filenames='["StudentLoans-avg","StudentLoans-share"]' data-headers='["Average","Share"]'>Save chart</button>
+                        <a href="data/StudentLoans.xlsx">
+                            <button id="save8" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes"><b>Source:</b> Survey of Consumer Finances 1989&ndash;2013.
+                    </p>
+                    <p class="chart-notes"><b>Notes:</b> 2013 dollars. Age is defined as the age of the household head.</p>
+                </div>
+
+
+            </aside>
+            <article>
+
+                <p>Since the mid-2000s, African American families, on average, have carried more student loan debt than white families. This is driven in large part by the growing share of African American families that take on student debt. In 2013, 42 percent of African Americans ages 25 to 55 had student loan debt, compared with 28 percent of whites.</p>
+
+                <p>Because African American families, on average, have less wealth and fewer private resources, they may be more likely to turn to loans to finance their education. <a href="http://www.urban.org/publications/413133.html">White families are five times more likely than African American families to receive large gifts or inheritances</a>, which can be used to pay for college.</p>
+
+                <p>However, African Americans also have <a href="http://nces.ed.gov/programs/digest/d13/tables/dt13_326.10.asp">lower graduation</a>  <a href="http://nces.ed.gov/programs/digest/d13/tables/dt13_326.20.asp">rates than whites</a>, and people of color <a href="http://nces.ed.gov/pubs2014/2014083.pdf">disproportionately attend</a>  <a href="http://www.responsiblelending.org/student-loans/research-policy/do-students-of-color-profit-from-for-profit-college.html">for-profit schools</a>, <a href="https://www.aeaweb.org/articles.php?doi=10.1257/jep.26.1.165">which have low graduation rates</a>. This means that student loan debt doesn’t always translate into a degree that would promote economic mobility—and income and wealth—in the long run.</p>
+
+            </article>
+
+
+        </div>
+        <!-- end 8 -->
+
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- 9 -->
+            <h1><span class="number">9 </span> Federal policies fail to promote asset building by lower-income families</h1> 
+            <aside>
+                <div class="aside-content">
+                    <div id="federal-subsidies" class="chart"></div>
+                    <div class="static-chart">
+                        <img src="img/AssetSubsidies.jpg" />
+                    </div>
+
+                    <div class="btn-group clearfix">
+
+                        <button class="btn dl save-chart single" data-filename="AssetSubsidies">Save chart</button>
+                        <a href="data/AssetSubsidies.xlsx">
+                            <button id="save9" class="btn dl data">Data</button>
+                        </a>
+                    </div>
+                    <p class="chart-notes"><b>Source:</b>  <a href="http://www.urban.org/publications/413241.html">Steuerle et al. (2014).</a>
+                    </p>
+                    <p class="chart-notes"><b>Note:</b> “Income” refers to the Tax Policy Center’s “expanded cash income” measure, which is described in <a href="http://www.taxpolicycenter.org/UploadedPDF/412871-measuring-income.pdf" target="_blank">Rosenberg (2013).</a>
+                    </p>
+                </div>
+            </aside>
+            <article>
+
+                <p>The federal government spent <a href="http://www.urban.org/publications/413241.html">$384 billion to support asset development in 2013</a>, but those subsidies primarily benefited higher-income families—<a href="http://blog.metrotrends.org/2015/02/tax-code-time/" target="_blank">exacerbating wealth inequality</a> and racial wealth disparities.</p>
+
+                <p>About two-thirds of homeownership tax subsidies and retirement subsidies go to the top 20 percent of taxpayers, as measured by income. The bottom 20 percent, meanwhile, receive less than 1 percent of these subsidies. African Americans and Hispanics, who have lower average incomes, receive much less of these subsidies than whites, both in total amount and as a share of their incomes.</p>
+
+                <p>Low-income families benefit from safety net programs, such as food stamps and welfare, but most of these programs focus on income—keeping families afloat today—and do not encourage wealth-building and economic mobility in the long run. What’s more, many programs discourage saving: for instance, when families won’t qualify for benefits if they have a few thousand dollars in assets or when they have to give up rent subsidies to own a home.</p>
+
+            </article>
+
+
+        </div>
+        <!-- end 10 -->
+
+        <hr/>
+        <div class="main wrapper clearfix">
+            <!-- 11 -->
+            <h1><!-- <span class="number">11 </span> -->Promising policies to shrink wealth inequality and racial wealth gaps</h1> 
+
+            <div class="closing-text">
+
+                <p>Federal asset-building subsidies disproportionately benefit high-income families that need them the least. Here are six <a href="http://www.urban.org/publications/413186.html">recommendations</a> that could help reduce wealth inequality and racial wealth disparities:</p>
+
+                <ul>
+                    <li>Limit the mortgage interest tax deduction and use the revenues to provide a credit for first-time homebuyers.</li>
+                    <li>Establish automatic savings in retirement plans.</li>
+                    <li>Offer matched savings such as universal children's savings accounts.</li>
+                    <li>Reform safety net program asset tests, which can act as barriers to saving among low-income families.</li>
+                    <li>Promote emergency savings with incentives linked to savings at tax time.</li>
+                    <li>Reduce reliance on student loans while supporting success in postsecondary education.</li>
+                </ul>
+
+                <p>By more efficiently and equitably promoting saving and asset building, more people may have the tools to protect their families in tough times and invest in themselves and their children.</p>
+                
+                <hr/>
+                <p><em>*This sentence was updated for clarity.</em></p>
+
+            </div>
+
+
+        </div>
+        <!-- end 11 -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h2>Project credits</h2>
+                <div id="research">
+                    <h5>Research</h5>
+                    <p class="author">Signe-Mary McKernan</p>
+                    <p class="author">Caroline Ratcliffe</p>
+                    <p class="author">C. Eugene Steuerle</p>
+                    <p class="author">Emma Kalish</p>
+                    <p class="author">Caleb Quakenbush</p>
+                </div>
+                <div id="feature">
+                    <h5>Feature</h5>
+                    <p class="author"><span class="role">Editorial </span>Serena Lei and Fiona Blackshaw</p>
+                    <p class="author"><span class="role">Design and development </span>Tim Meko and Ben Chartoff</p>
+                </div>
+                <div class="clearfix"></div>
+                <hr/>
+                <div class="copyright">The nonprofit Urban Institute is dedicated to elevating the debate on social and economic policy. This interactive was funded by the Ford Foundation, with additional support from the Annie E. Casey Foundation. Funders do not determine research findings or influence scholars’ conclusions. The team thanks Melissa Favreault and Karen Smith for special tabulations, Taz George for assistance with the homeownership series, and Opportunity and Ownership seminar participants for helpful comments. The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders.</div>
+                <div class="copyright">&copy; <a href="http://www.urban.org">Urban Institute</a> February 2015</div>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
+        </script>
+
+        <script src="js/main.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/inmovers.js"></script>
+        <script src="js/unaffordable.js"></script>
+        <script src="js/vendor/d3.min.js"></script>
+        <script src="js/popup.js"></script>
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function (b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] =
+                    function () {
+                        (b[l].q = b[l].q || []).push(arguments)
+                    });
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-57529944-1');
+            ga('send', 'pageview');
+        </script>
+
+        <script src="js/custom-analytics-master/urban-analytics.min.js"></script>
+
+        <!--custom element tracking-->
+        <script type="text/javascript">
+            $(".save-chart")
+                .custom_analytics('track', {
+                    category: "button",
+                    action: "click",
+                    label: "object_HTML",
+                    value: 1,
+                    timing: true,
+                    interaction: true
+                });
+            $(".data")
+                .custom_analytics('track', {
+                    category: "button",
+                    action: "click",
+                    label: "object_HTML",
+                    value: 1,
+                    timing: true,
+                    interaction: true
+                });
+
+            $(window)
+                .custom_analytics('scrollTrack', {
+                    timing: true,
+                    interaction: true
+                });
+        </script>
+
+
+</body>
+
+</html>

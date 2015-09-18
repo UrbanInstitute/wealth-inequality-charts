@@ -1,0 +1,35 @@
+<html>
+<body>
+<button id = "button1" class = "tmp">Button</button>
+<input id = "input1" class = "tmp">Input</input>
+</body>
+<script src = "http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src = "../src/custom-analytics.js"></script>
+<script type="text/javascript">
+    // trackEvents(
+    //     [
+    //         {
+    //             elements: $("#button1"),
+    //             category: "button",
+    //             action: "click",
+    //             label: "Download button",
+    //             value: 1
+    //         },
+    //         {
+    //             elements: $("#input1"),
+    //             category: "article paragraph",
+    //             action: "copy"
+    //         }
+    //     ]
+    // );
+// $(".tmp").custom_analytics('track',
+// 	{
+//         category: "button",
+//         action: "click",
+//         label: "Download button",
+//         value: 1
+//     }
+// );
+$(window).custom_analytics('scrollTrack',null)
+</script>
+</html>
