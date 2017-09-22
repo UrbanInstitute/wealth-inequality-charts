@@ -45,10 +45,6 @@ a {
     color: #1696d2;
     text-decoration: none;
 }
-a:hover {
-    background-color: #1696d2;
-    color: #fff;
-}
 .btn:hover {
     background-color: #000;
 }
@@ -194,7 +190,6 @@ body {
 .header-container {
     background-color: #000;
 }
-.footer-container,
 .main aside {
     margin-left: 0%;
 }
@@ -217,10 +212,7 @@ body {
 .main aside {
     background: #f9f9f9;
 }
-.footer-container {
-    background: #555;
-    height: auto;
-}
+
 .author {
     margin-bottom: 0px;
     margin-top: 0px;
@@ -294,10 +286,7 @@ nav a:visited {
 .main aside {
     color: #000;
 }
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -617,4 +606,8 @@ nav a:visited {
     width: 100%;
     border-bottom: #555 1px solid;
     margin-bottom: 15px;
+}
+footer p{
+    line-height: 1.6;
+    margin-bottom: 15px !important;
 }
