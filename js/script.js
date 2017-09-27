@@ -1638,6 +1638,7 @@ $(document).ready(function () {
             chart: {
                 marginTop: 100,
                 marginBottom: 60,
+                marginRight: 20,
                 type: 'bar'
             },
             plotOptions: {
@@ -1663,7 +1664,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Size and Distribution of Select Asset-Building Tax Subsidies, 2013'
+                text: 'Size and Distribution of Select Asset-Building Tax Subsidies, 2017'
             },
             subtitle: {
                 text: '',
@@ -1697,6 +1698,7 @@ $(document).ready(function () {
             },
             yAxis: {
                 min: 0,
+                max: 200,
                 title: {
                     text: 'Billions of dollars'
                 },
@@ -1724,56 +1726,58 @@ $(document).ready(function () {
             series: [{
                 name: 'Top 20%',
                 color: '#000000',
-                data: [null, 49.473, 20.4221, null, 62.7228, 3.3228, 0.36],
+                data: [null, 46.174, 22.178, null, 122.113, 5.022, 0.017],
                 perc: [null,
-71.7,
-69.7,
+72.6,
+66.6,
 null,
-68.4,
-63.9,
-0.3]
+62.8,
+63,
+0.8]
         }, {
                 name: 'Fourth 20%',
                 color: '#00578b',
-                data: [null, 13.248, 6.0651, null, 16.506, 0.9776, .1068],
+                data: [null, 12.402, 7.892, null, 43.751, 1.602, 0.302],
             perc:[null,
-19.2,
-20.7,
+19.5,
+23.7,
 null,
-18,
-18.8,
-8.9]
+22.5,
+20.1,
+14.3]
         }, {
                 name: 'Middle 20%',
                 color: '#1696d2',
-                data: [null, 5.244, 2.3147, null, 8.253, 0.6084, 0.4884],
+                data: [null, 4.261, 2.764, null, 20.611, 0.973, 0.656],
             perc:[null,
-7.6,
-7.9,
+6.7,
+8.3,
 null,
-9,
-11.7,
-40.7]
+10.6,
+12.2,
+31.1]
         }, {
                 name: 'Second 20%',
                 color: '#82c4e9',
-                data: [null, 0.966, 0.4688, null, 3.4846, 0.2496, 0.45],
-            perc: [null,1.4,
-1.6,
+                data: [null, 0.700, 0.400, null, 7.195, 0.311, 0.852],
+            perc: [null,
+1.1,
+1.2,
 null,
-3.8,
-4.8,
-37.5]
+3.7,
+3.9,
+40.4]
         }, {
                 name: 'Bottom 20%',
                 color: '#b0d5f1',
-                data: [null, 0.069, 0.0293, null, .6419, 0.0416, 0.15],
-                perc: [null, 0.1,
+                data: [null, 0.064, 0.033, null, 0.972, 0.056, 0.283],
+                perc: [null,
+0.1,
 0.1,
 null,
+0.5,
 0.7,
-0.8,
-12.5]
+13.4]
         }]
         });
         ///////////////////////////////////////////////////////
