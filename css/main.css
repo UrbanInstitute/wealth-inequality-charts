@@ -117,9 +117,10 @@ h5 {
 }
 button {
     background-color: #1696d2;
-    padding: 3px 8px 3px;
+    padding: 4px 9px 4px;
     border: 0px outset buttonface;
     color: #fff;
+    font-size: 13px;
 }
 button:hover {
     background-color: #000;

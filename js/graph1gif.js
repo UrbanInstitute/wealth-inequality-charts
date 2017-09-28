@@ -204,7 +204,115 @@ $(document).ready(function () {
 
 
         //chart1
+        $('#wealthInequality').highcharts({
+            chart: {
+                marginTop: 100,
+                marginBottom: 40
 
+            },
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: true
+                    },
+
+                    dataLabels: {
+                        enabled: false,
+                        align: 'left',
+                        x: 5,
+                        y: 4,
+                        formatter: function () {
+                            if ((this.point.x == this.series.data.length - 1) || (this.point.x == 0) || (this.point.x == 7)) {
+                                return '$' + Highcharts.numberFormat(this.y, 0, ',');
+                            } else {
+                                return null;
+                            }
+                        }
+
+                    }
+                }
+            },
+            title: {
+                text: 'Wealth inequality is large and by some measures is getting worse'
+            },
+            subtitle: {
+                text: 'Percentiles of family wealth, 1963–2013',
+                x: 0,
+                y: 35
+            },
+            xAxis: {
+                gridLineWidth: '0',
+                lineWidth: 2,
+                tickInterval: 0,
+                categories: ["1963", "", "", "", "", "", "", "1983", "", "1989", "1992", "1995", "1998", "2001", "2004", "2007", "2010", "2013"],
+                plotLines: [{
+                    value: 0,
+                    width: 0
+                        }],
+                labels: {
+                    step: 0,
+                    x: 0,
+                    y: 20
+                }
+            },
+            yAxis: {
+                title: {
+                    text: ''
+                },
+                min: -5000,
+                startOnTick: false,
+                labels: {
+                    format: '${point.y:,.0f}',
+                }
+            },
+            tooltip: {
+                shared: true,
+                valuePrefix: '$',
+                valueDecimals: 0
+            },
+            credits: {
+                enabled: false,
+                text: "",
+                href: "http://www.neighborhoodinfodc.org"
+            },
+            legend: {
+                enabled: true,
+                floating: 'true',
+                align: 'center',
+                verticalAlign: 'left',
+                layout: 'horizontal',
+                borderWidth: 0,
+                itemDistance: 9,
+                y: 40
+            },
+            series: [{
+                    name: '10th Percentile',
+                    color: "#cfe3f5",
+                    data: [-17.87998, null, null, null, null, null, null, 701.6777, null, 0, 0, 91.07285, 0, 131.3216, 246.6284, 33.68387, -1071.696, -2050]
+                    },
+                {
+                    name: '50th Percentile',
+                    color: "#91d0f2",
+                    data: [39741.24, null, null, null, null, null, null, 80150.3, null, 85064.29, 80750.76, 87733.51, 102496.7, 113908.4, 114805.5, 135858.3, 82520.57, 81400]
+                    },
+                {
+                    name: '90th Percentile',
+                    color: "#1696d2",
+                    data: [231367, null, null, null, null, null, null, 503816.3, null, 665186.1, 581502.9, 579359.9, 705469, 978950.1, 1029427, 1022081, 1020469, 942200]
+                    },
+                {
+                    name: '95th Percentile',
+                    color: "#0777bc",
+                    data: [396345, null, null, null, null, null, null, 929105.5, null, 1253297, 1085342, 1038838, 1287713, 1729243, 1762777, 2133503, 1997427, 1871600]
+                    },
+                {
+                    name: '99th Percentile',
+                    color: "#000000",
+                    data: [1411488, null, null, null, null, null, null, 3218818, null, 4195427, 3772295, 3733076, 5434756, 7702013, 7837851, 9402896, 7304893, 7880400]
+                    }
+                                          ]
+
+        }); //end chart 1
 
 
         //charttest
@@ -223,7 +331,7 @@ $(document).ready(function () {
                 text: 'Percentiles of Family Wealth, 1963–2016'
             },
             subtitle: {
-                text: 'Click and drag to zoom',
+                text: '',
                 x: 0,
                 y: 35
             },
@@ -324,7 +432,6 @@ $(document).ready(function () {
                 title: {
                     text: ''
                 },
-                tickInterval: 2500000,
                 startOnTick: false,
                 max: 12500000,
                 min: -100000,
@@ -1859,7 +1966,7 @@ null,
             this.disabled = false;
         });
 
-
+        var shorter = .5
         $('#button-time').click(function () {
             pauseAnimation();
 
@@ -1872,7 +1979,7 @@ null,
                 tbuttons.removeClass("active");
                 $('#button-1983').addClass("active")
 
-            }, 1000);
+            }, 1000*shorter);
 
             t89 = timer = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1881,7 +1988,7 @@ null,
                 wealthChart.series[0].setData(per1989);
                 tbuttons.removeClass("active");
                 $('#button-1989').addClass("active")
-            }, 2000);
+            }, 2000*shorter);
 
             t92 = timer = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1890,7 +1997,7 @@ null,
                 wealthChart.series[0].setData(per1992);
                 tbuttons.removeClass("active");
                 $('#button-1992').addClass("active")
-            }, 3000);
+            }, 3000*shorter);
 
             t95 = timer = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1899,7 +2006,7 @@ null,
                 wealthChart.series[0].setData(per1995);
                 tbuttons.removeClass("active");
                 $('#button-1995').addClass("active")
-            }, 4000);
+            }, 4000*shorter);
 
             t98 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1908,7 +2015,7 @@ null,
                 wealthChart.series[0].setData(per1998);
                 tbuttons.removeClass("active");
                 $('#button-1998').addClass("active")
-            }, 5000);
+            }, 5000*shorter);
 
             t01 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1917,7 +2024,7 @@ null,
                 wealthChart.series[0].setData(per2001);
                 tbuttons.removeClass("active");
                 $('#button-2001').addClass("active")
-            }, 6000);
+            }, 6000*shorter);
 
             t04 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1926,7 +2033,7 @@ null,
                 wealthChart.series[0].setData(per2004);
                 tbuttons.removeClass("active");
                 $('#button-2004').addClass("active")
-            }, 7000);
+            }, 7000*shorter);
 
             t07 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1935,7 +2042,7 @@ null,
                 wealthChart.series[0].setData(per2007);
                 tbuttons.removeClass("active");
                 $('#button-2007').addClass("active")
-            }, 8000);
+            }, 8000*shorter);
 
             t10 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1944,7 +2051,7 @@ null,
                 wealthChart.series[0].setData(per2010);
                 tbuttons.removeClass("active");
                 $('#button-2010').addClass("active")
-            }, 9000);
+            }, 9000*shorter);
 
             t13 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1953,7 +2060,7 @@ null,
                 wealthChart.series[0].setData(per2013);
                 tbuttons.removeClass("active");
                 $('#button-2013').addClass("active")
-            }, 10000);
+            }, 10000*shorter);
 
             t16 = setTimeout(function () {
                 wealthChart.series[0].update({
@@ -1962,7 +2069,7 @@ null,
                 wealthChart.series[0].setData(per2016);
                 tbuttons.removeClass("active");
                 $('#button-2016').addClass("active")
-            }, 11000);
+            }, 11000*shorter);
 
             this.disabled = false;
         });
