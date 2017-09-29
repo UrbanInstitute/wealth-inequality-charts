@@ -47,6 +47,7 @@ a {
 }
 .btn:hover {
     background-color: #000;
+    color: #fff !important;
 }
 .dl {
     background-color: #000;
@@ -100,6 +101,7 @@ textarea {
 .chart {
     margin: 0 auto;
     margin-top: 0px;
+    margin-bottom: 10px;
     position: relative;
     min-width: 400px;
     min-height: 400px;
@@ -550,7 +552,7 @@ nav a:visited {
     background-color: white;
 }
 .popup-title {
-    height: 30px;
+    height: 45px;
     background-color: #EEEFF0;
     padding: 10px;
 }
@@ -575,10 +577,12 @@ nav a:visited {
     background-color: #EEEFF0;
     bottom: 0;
     padding: 10px;
-    height: 40px;
+    height: 60px;
 }
 #close-popup {
     float: right;
+    top: -5px;
+    position: relative;
 }
 #close-popup:hover {
     cursor: pointer;

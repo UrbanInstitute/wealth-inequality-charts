@@ -99,7 +99,7 @@ body{
 #header-pinned .share-icons .shareThisP {
     border-top: 0;
     border-left: 1px solid #e6e5e5;
-    height: 42px;
+    height: 51px;
     padding: 9px 0 0;
 }
 
@@ -116,6 +116,7 @@ body{
     width: 32px;
     float: none;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 #header-pinned .share-icons .shareThisB:hover {

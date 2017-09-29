@@ -65,7 +65,7 @@ function singlePopUp(button,footer,image){
 		.attr('class','single')
 		.attr('src','img/'+filename+'.jpg');
 
-	footer.attr('style','height: 40px')
+	footer.attr('style','height: 60px')
 	var container = footer.append('div')
 		.attr('class','button-container')
 
@@ -106,7 +106,7 @@ function doublePopUp(button,footer,image){
 		.attr('class','double')
 		.attr('src','img/'+f2+'.jpg');
 
-	footer.attr('style','height: 90px')
+	footer.attr('style','height: 100px')
 	image.attr('style','height: 73%')
 
 	var left = footer.append('div')
@@ -184,7 +184,7 @@ function customPopUp(button,footer,image){
 		.attr('class','double')
 		.attr('src','img/'+f2+'.jpg');
 
-	footer.attr('style','height: 90px')
+	footer.attr('style','height: 100px')
 	image.attr('style','height: 73%')
 
 	var left = footer.append('div')
