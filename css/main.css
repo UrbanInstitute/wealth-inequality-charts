@@ -616,3 +616,20 @@ footer p{
     line-height: 1.6;
     margin-bottom: 15px !important;
 }
+
+
+
+
+
+
+
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(1), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(1),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(2), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(2),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(4), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(4),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(5), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(5),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(7), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(7),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(8), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(8),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(10), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(10),
+#racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(12), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(12) {
+    display: none;
+}

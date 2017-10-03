@@ -121,6 +121,8 @@ var per2016 = [null, -80620.0,-50920.0,-34580.0,-25749.0,-17300.0,-11710.0,-7998
 
 
 $(document).ready(function () {
+
+
     $(function () {
         $('#percentileFamilyIncome').highcharts({
             chart: {
@@ -220,7 +222,7 @@ $(document).ready(function () {
 
 
             title: {
-                text: 'Percentiles of Family Wealth, 1963–2016'
+                text: 'Distribution of Family Wealth, 1963–2016'
             },
             subtitle: {
                 text: 'Click and drag to zoom',
@@ -347,8 +349,8 @@ $(document).ready(function () {
                 enabled: false
             },
             series: [{
-                name: '1963',
-                data: [null, -6405.3,-4430.2,-3458.0,-2688.9,-2079.7,-1513.6,-1002.9,-547.6,-295.3,-18.5,6.2,6.2,6.2,6.2,160.0,436.9,793.7,1144.5,1298.3,1821.3,2313.5,2793.5,3156.5,3839.5,4436.3,5063.9,5913.0,6663.7,7882.0,9229.5,10454.0,11512.3,12416.8,13542.8,15468.7,16711.6,18034.5,19185.1,20643.4,22058.6,23849.1,25233.5,26636.4,28580.8,31201.9,33601.6,34770.7,36831.9,38191.8,41028.3,42462.0,44049.4,46153.8,47501.3,49464.1,51076.2,53888.1,56921.5,60551.8,62225.4,64071.3,67843.1,69535.2,72248.7,76045.1,78684.8,82013.5,85563.8,87379.0,91378.4,95174.8,98109.8,102392.3,106305.6,110975.8,115910.5,119393.1,124469.3,129465.5,136295.4,141587.0,149222.9,156674.2,161892.0,174068.8,186036.4,197081.1,209110.2,221674.7,238860.1,258678.9,281660.4,313317.7,349029.8,409181.7,466767.8,600177.4,758199.1,1457200.5]
+                name: '2016',
+                data: per2016
                     }]
 
         }); //end chart Test
@@ -831,7 +833,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Average Family Wealth for Those Born 1943–51'
+                text: 'Average Family Wealth for Those Born 1943-51 by Race'
             },
             subtitle: {
                 text: '',
@@ -841,13 +843,14 @@ $(document).ready(function () {
             xAxis: {
                 gridLineWidth: '0',
                 lineWidth: 2,
-                tickInterval: 4,
-                categories: ["30s and 40s", "30s and 40s", "30s and 40s", "40s and 50s", "40s and 50s", "40s and 50s", "50s and 60s", "50s and 60s", "50s and 60s","60s and 70s"],
+                tickInterval: 1,
+                categories: ["30s and 40s",null, "30s and 40s", "30s and 40s", "40s and 50s", "40s and 50s", "40s and 50s", "50s and 60s", "50s and 60s", "50s and 60s","60s and 70s","60s and 70s"],
                 plotLines: [{
                     value: 0,
                     width: 0
                         }],
                 labels: {
+                    rotation: 0,
                     step: 0,
                     x: 0,
                     y: 20
@@ -895,17 +898,27 @@ $(document).ready(function () {
             series: [
                 {
                     name: 'White',
-                    data: [210741.92,395395.72,423597.7,509094.94,701825.41,1018077.2,1205138.9,1338772,1253014.6,1261285.8,1338360.1],
-                    cohortAges: ["32-40", "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
+                    data: [210741.92,null,395395.72,423597.7,509094.94,701825.41,1018077.2,1205138.9,1338772,1253014.6,1261285.8,1338360.1],
+                    cohortAges: ["32-40",null, "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
                     },
                 {
                     name: 'Black',
                     color: "#ec008c",
-                    data: [63444.334,126714.82,102510.98,112604.41,138668.84,168999.75,277834.46,251223.5,167866,120797.94,203687.83],
-                    cohortAges: ["32-40", "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
+                    data: [63444.334,null,126714.82,102510.98,112604.41,138668.84,168999.75,277834.46,251223.5,167866,120797.94,203687.83],
+                    cohortAges: ["32-40",null, "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
                     }]
 
-        }); //end chart racial weawlth gap 
+        }, function(){
+                $("#racial-wealth-gap-mean .highcharts-xaxis-labels text")
+                    .each(function(i,e){
+                        if($(this).find("title").length != 0){
+                            var title = $(this).find("title")
+                            var tspan= $(this).find("tspan")
+                            tspan.text(title.text())
+                        }
+                    })
+            }
+        ); //end chart racial weawlth gap 
 
         //chart5-median
         $('#racial-wealth-gap-median').highcharts({
@@ -1702,12 +1715,12 @@ null,
 
         //animate series button
         // var timer;
-        var t83, t89, t92, t95, t98, t01, t04, t07, t10;
+        var t63, t83, t89, t92, t95, t98, t01, t04, t07, t10, t13, t16;
         var tbuttons = $("#time-series-btns>button")
 
 
         function pauseAnimation() {
-            [t83, t89, t92, t95, t98, t01, t04, t07, t10].map(function (t) {
+            [t63, t83, t89, t92, t95, t98, t01, t04, t07, t10, t13, t16].map(function (t) {
                 clearTimeout(t);
             });
 
@@ -1864,6 +1877,15 @@ null,
             pauseAnimation();
 
 
+            t63 = timer = setTimeout(function () {
+                wealthChart.series[0].update({
+                    name: 1963
+                });
+                wealthChart.series[0].setData(per1963);
+                tbuttons.removeClass("active");
+                $('#button-1963').addClass("active")
+
+            }, 10);
             t83 = timer = setTimeout(function () {
                 wealthChart.series[0].update({
                     name: 1983
