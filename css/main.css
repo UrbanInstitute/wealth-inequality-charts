@@ -662,3 +662,8 @@ footer p{
 .footerButton:hover a{
     color: #fff !important;
 }
+#updatedNote{
+    font-style: italic;
+    margin-top: 14px;
+    font-size: 15px;
+}
