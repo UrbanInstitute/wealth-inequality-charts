@@ -634,12 +634,15 @@ footer p{
     display: none;
 }
 
-#hideChartEight.hidden{
+#hideChartEight.hidden, #hideChartEightMore.hidden{
     display: none;
 }
 #hideChartEight{
     display: inline-block;
     margin-right: 3px;
+}
+#hideChartEightMore{
+    display: inline-block;
 }
 .footerButton{
         float: left;
@@ -653,7 +656,7 @@ footer p{
     text-decoration: none !important;
     color: #333 !important;
     margin: 14px 0;
-        width: 155px !important;
+        width: 143px !important;
     margin-right: 10px;
 }
 .footerButton a{

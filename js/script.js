@@ -511,7 +511,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Average Family Wealth by Race/Ethnicity, 1963-2016'
+                text: 'Average Family Wealth by Race/Ethnicity, 1963–2016'
             },
             subtitle: {
                 text: '',
@@ -2043,8 +2043,10 @@ null,
                 document.getElementById('share-families-debt').className = 'chart show';
                 document.getElementById('race-student').innerHTML = 'Show Average Student Loan Debt'
                 document.getElementById('hideChartEight').className = "hidden";
+                document.getElementById('hideChartEightMore').className = "hidden";
             } else {
                 document.getElementById('hideChartEight').className = "show";
+                document.getElementById('hideChartEightMore').className = "show";
                 document.getElementById('race-student').innerHTML = 'Show Share with Student Loan debt'
                 document.getElementById('share-families-debt').className = 'chart hide';
                 document.getElementById('avg-student-debt').className = 'chart show';
