@@ -633,3 +633,32 @@ footer p{
 #racial-wealth-gap-mean .highcharts-xaxis .highcharts-tick:nth-child(12), #racial-wealth-gap-mean .highcharts-xaxis-labels text:nth-child(12) {
     display: none;
 }
+
+#hideChartEight.hidden{
+    display: none;
+}
+#hideChartEight{
+    display: inline-block;
+    margin-right: 3px;
+}
+.footerButton{
+        float: left;
+    height: 20px;
+    border: 1px solid #333;
+    cursor: pointer;
+    font: 13px Lato;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none !important;
+    color: #333 !important;
+    margin: 14px 0;
+        width: 155px !important;
+    margin-right: 10px;
+}
+.footerButton a{
+    color: #333 !important;
+}
+.footerButton:hover a{
+    color: #fff !important;
+}

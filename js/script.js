@@ -139,7 +139,7 @@ $(document).ready(function () {
             },
 
             title: {
-                text: 'Distribution of Family Income, 1963-2016'
+                text: 'Distribution of Family Income, 1963–2016'
             },
             subtitle: {
                 text: '',
@@ -326,9 +326,9 @@ $(document).ready(function () {
                 title: {
                     text: ''
                 },
-                tickInterval: 2500000,
+                tickInterval: 3000000,
                 startOnTick: false,
-                max: 12500000,
+                max: 12000000,
                 min: -100000,
                 labels: {
                     format: '${value:,.0f}'
@@ -350,7 +350,7 @@ $(document).ready(function () {
             },
             series: [{
                 name: '2016',
-                data: per2016
+                data: [null, -80620.0,-50920.0,-34580.0,-25749.0,-17300.0,-11710.0,-7998.0,-5170.0,-2818.0,-950.0,0.0,60.0,320.0,680.0,1100.0,1560.0,2350.0,3230.0,4080.0,4800.0,5620.0,6410.0,7651.0,8971.0,10275.0,11451.0,13041.0,14920.0,16900.0,18900.0,21001.0,23100.0,26100.0,28500.0,31105.0,34220.0,38070.0,41360.0,45030.0,49100.0,53900.0,58500.0,63000.0,67000.0,71501.0,76960.0,81750.0,87000.0,92000.0,97300.0,102400.0,107180.0,113000.0,119800.0,126800.0,136050.0,145000.0,152300.0,160401.0,170000.0,179400.0,188200.0,197200.0,206940.0,220900.0,229500.0,240900.0,253300.0,266680.0,279000.0,295250.0,311500.0,324800.0,344000.0,368600.0,394500.0,413900.0,438550.0,469900.0,499350.0,542500.0,583600.0,624700.0,674010.0,739000.0,809400.0,883000.0,979930.0,1072550.0,1186570.0,1317500.0,1445700.0,1686700.0,2044300.0,2387250.0,2838000.0,3693600.0,5793500.0,10400000.0]
                     }]
 
         }); //end chart Test
@@ -386,7 +386,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'GDP per Household versus the Median Income, 1960-2013'
+                text: 'GDP per Household versus the Median Income, 1960–2013'
             },
             subtitle: {
                 text: '',
@@ -619,7 +619,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Median Family Wealth by Race/Ethnicity, 1963-2016'
+                text: 'Median Family Wealth by Race/Ethnicity, 1963–2016'
             },
             subtitle: {
                 text: '',
@@ -647,6 +647,8 @@ $(document).ready(function () {
                     text: ''
                 },
                 min: 0,
+                max: 200000,
+                tickInterval: 50000,
                 startOnTick: false,
                 labels: {
                     format: '${value:,.0f}'
@@ -833,7 +835,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Average Family Wealth for Those Born 1943-51 by Race'
+                text: 'Average Family Wealth for Those Born 1943–51 by Race'
             },
             subtitle: {
                 text: '',
@@ -899,13 +901,13 @@ $(document).ready(function () {
                 {
                     name: 'White',
                     data: [210741.92,null,395395.72,423597.7,509094.94,701825.41,1018077.2,1205138.9,1338772,1253014.6,1261285.8,1338360.1],
-                    cohortAges: ["32-40",null, "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
+                    cohortAges: ["32–40",null, "38–46", "41–49", "44–52", "47–55", "50–58", "53–61", "56–64", "59–67", "62–70","65–73"]
                     },
                 {
                     name: 'Black',
                     color: "#ec008c",
                     data: [63444.334,null,126714.82,102510.98,112604.41,138668.84,168999.75,277834.46,251223.5,167866,120797.94,203687.83],
-                    cohortAges: ["32-40",null, "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
+                    cohortAges: ["32–40",null, "38–46", "41–49", "44–52", "47–55", "50–58", "53–61", "56–64", "59–67", "62–70","65–73"]
                     }]
 
         }, function(){
@@ -1015,13 +1017,13 @@ $(document).ready(function () {
                 {
                     name: 'White',
                     data: [101317.32,163449.34,136345.67,179542.41,224269.55,281714.19,418543.47,367785.56,327287.84,343667.19,317510],
-                    cohortAges: ["32-40", "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
+                    cohortAges: ["32–40", "38–46", "41–49", "44–52", "47–55", "50–58", "53–61", "56–64", "59–67", "62–70","65–73"]
                     },
                 {
                     name: 'Black',
                     color: "#ec008c",
                     data: [13874.719,5019.1636,41490.676,56470.121,26513.973,64355.426,52448.289,121695.8,38686.508,48059.789,46890],
-                    cohortAges: ["32-40", "38-46", "41-49", "44-52", "47-55", "50-58", "53–61", "56-64", "59-67", "62-70","65-73"]
+                    cohortAges: ["32–40", "38–46", "41–49", "44–52", "47–55", "50–58", "53–61", "56–64", "59–67", "62–70","65–73"]
                     }]
 
         }); //end chart racial weawlth gap 
@@ -1051,7 +1053,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Average Accumulated Real Lifetime Earnings at Age 58-62 for People Born 1950-54, by Gender and Race/Ethnicity'
+                text: 'Average Accumulated Real Lifetime Earnings at Ages 58–62 for People Born 1950–54, by Gender and Race/Ethnicity'
             },
             subtitle: {
                 text: '',
@@ -1187,6 +1189,8 @@ $(document).ready(function () {
                     text: ''
                 },
                 min: 0,
+                max: 80,
+                tickInterval: 10,
                 startOnTick: false,
                 labels: {
                     format: '{value}%'
@@ -1260,7 +1264,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Average Family Liquid Retirement Savings, 1989-2016'
+                text: 'Average Family Liquid Retirement Savings, 1989–2016'
             },
             subtitle: {
                 text: '',
@@ -1468,7 +1472,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Share of Families With Student Loan Debt for Those Ages 25–55, 1989–2016'
+                text: 'Share of Families with Student Loan Debt for Those Ages 25–55, 1989–2016'
             },
             subtitle: {
                 text: '',
@@ -1863,7 +1867,7 @@ null,
 
             pauseAnimation();
             wealthChart.series[0].update({
-                name: 2013
+                name: 2016
             });
             wealthChart.series[0].setData(per2016);
 
@@ -2038,7 +2042,9 @@ null,
                 document.getElementById('avg-student-debt').className = 'chart hide';
                 document.getElementById('share-families-debt').className = 'chart show';
                 document.getElementById('race-student').innerHTML = 'Show Average Student Loan Debt'
+                document.getElementById('hideChartEight').className = "hidden";
             } else {
+                document.getElementById('hideChartEight').className = "show";
                 document.getElementById('race-student').innerHTML = 'Show Share with Student Loan debt'
                 document.getElementById('share-families-debt').className = 'chart hide';
                 document.getElementById('avg-student-debt').className = 'chart show';

@@ -432,8 +432,9 @@ $(document).ready(function () {
                 title: {
                     text: ''
                 },
+                
                 startOnTick: false,
-                max: 12500000,
+                max: 12000000,
                 min: -100000,
                 labels: {
                     format: '${value:,.0f}'
