@@ -1161,7 +1161,7 @@ $(document).ready(function () {
                 }
             },
             title: {
-                text: 'Homeownership Rate by Race/Ethnicity, 1983–2016'
+                text: 'Homeownership Rate by Race/Ethnicity, 1976–2016<sup>*</sup>'
             },
             subtitle: {
                 text: '',

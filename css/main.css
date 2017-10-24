@@ -670,3 +670,8 @@ footer p{
     margin-top: 14px;
     font-size: 15px;
 }
+#correction{
+    font-size: 13px;
+    margin-top: 60px;
+    font-style: italic;
+}
